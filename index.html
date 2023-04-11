@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <p class="abona">ABONÁ CON TODOS LOS MEDIOS DE PAGO</p>
+        <div class="container">
+            <div class="row">
+
+                <div class="four columns">
+                    <img src="./img/logo.jpeg" alt="logo de cerveza" class="logoCerveza">
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/carrito.png" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1 id="encabezado" class="encabezado">Insumos-Tienda</h1>
+    <div id="lista-productos" class="container">
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/doradaPampeana.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Kit Dorada Pampeana</h4>
+                        <p class="precio">$1250 </p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ipa.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Kit American </h4>
+                        <p>(nuevo ingreso)</p>
+                        <p class="precio">$1000 </p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/honey.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Kit Honey</h4>
+                        <p>(nuevo ingreso)</p>
+                        <p class="precio">$1500</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
