@@ -100,3 +100,59 @@ vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 
 
+
+//toastfy
+
+vaciarCarritoBtn.addEventListener("click", ()=>{
+    Toastify({
+        text: "Carrito eliminado",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #630000, #630000)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+    
+    
+})
+
+listaProductos.addEventListener("click", ()=>{
+    Toastify({
+        text: "Se agregó al carrito",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, green, green)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+    
+    
+})
+
+//api usuarios
+const urlUsuarios = "https://jsonplaceholder.typicode.com/users";
+const user = document.querySelector("#users");
+
+fetch(urlUsuarios)
+    .then( (response) => response.json() )
+    .then( (data) => {
+        data.forEach(usuario => {
+            const li = document.createElement("li");
+            li.textContent = usuario.name + " - Telefóno:" + usuario.phone;
+            users.append(li);
+        })
+    } )
+
+

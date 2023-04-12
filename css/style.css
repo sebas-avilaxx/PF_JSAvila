@@ -74,6 +74,19 @@ ul {
     font-weight: 700;
     font-size: 22px;
 }
+/* seccion contactos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.seccionContactos{
+  margin-top: 20px;
+}
+#users{
+  text-align: center;
+  background-color: #ada8a8;
+  list-style: circle;
+  
+}
+
+
 
 
 
